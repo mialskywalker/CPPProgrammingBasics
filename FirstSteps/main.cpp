@@ -2,9 +2,9 @@
 using namespace std;
 
 int main() {
-    int a = 0;
-    int b = 0;
+    double inches = 0.0;
+    double cm = 2.54;
 
-    cin >> a >> b;
-    cout << a*b;
+    cin >> inches;
+    cout << inches * cm;
 }
