@@ -2,15 +2,20 @@
 using namespace std;
 
 int main() {
-    const double DOG_FOOD = 2.5;
-    const double CAT_FOOD = 4.0;
+    const double PRICE_FOR_ONE_SQM = 7.61;
+    const double DISCOUNT = 0.18;
 
-    int dogPackets = 0;
-    int catPackets = 0;
-    double result = 0.0;
+    double sqm = 0;
+    double price = 0;
+    double discount = 0;
+    double finalPrice = 0;
 
-    cin >> dogPackets >> catPackets;
-    result = (dogPackets * DOG_FOOD) + (catPackets * CAT_FOOD);
+    cin >> sqm;
 
-    cout << result << " lv.";
+    price = sqm * PRICE_FOR_ONE_SQM;
+    discount = price * DISCOUNT;
+    finalPrice = price - discount;
+
+    cout << "The final price is: " << finalPrice << " lv." << endl << "The discount is: " << discount << " lv.";
+
 }
