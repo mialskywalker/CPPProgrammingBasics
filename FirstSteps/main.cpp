@@ -2,9 +2,8 @@
 using namespace std;
 
 int main() {
-    double inches = 0.0;
-    double cm = 2.54;
+    string firstName;
 
-    cin >> inches;
-    cout << inches * cm;
+    cin >> firstName;
+    cout << "Hello, " << firstName << "!";
 }
