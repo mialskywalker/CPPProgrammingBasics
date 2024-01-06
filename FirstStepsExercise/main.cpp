@@ -2,11 +2,22 @@
 using namespace std;
 
 int main() {
-    int pagesCount = 0;
-    int pagesPerHour = 0;
-    int daysCount = 0;
+    const double PEN_PRICE = 5.80;
+    const double MARKER_PRICE = 7.20;
+    const double CLEANING_SOLUTION = 1.20;
 
-    cin >> pagesCount >> pagesPerHour >> daysCount;
+    int penCount = 0;
+    int markerCount = 0;
+    int cleanerLiters = 0;
+    int discountPercentage = 0;
 
-    cout << (pagesCount / pagesPerHour) / daysCount;
+    cin >> penCount >> markerCount >> cleanerLiters >> discountPercentage;
+
+    double pen = penCount * PEN_PRICE;
+    double marker = markerCount * MARKER_PRICE;
+    double cleaner = cleanerLiters * CLEANING_SOLUTION;
+
+    double total = (pen + marker + cleaner) - ((pen + marker + cleaner) * (double(discountPercentage) / 100));
+
+    cout << total;
 }
