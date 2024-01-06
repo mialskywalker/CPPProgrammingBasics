@@ -1,16 +1,17 @@
 #include <iostream>
-#include <math.h>
 using namespace std;
 
 int main() {
-    const double PI = 3.14;
-    double radians = 0.0;
-    double degrees = 0.0;
+    double depositAmount = 0.0;
+    int depositTerm = 0.0;
+    double APR = 0.0;
+    double total = 0.0;
 
-    cin >> radians;
+    cin >> depositAmount >> depositTerm >> APR;
 
-    degrees = radians * (180 / PI);
-    degrees = round(degrees);
+    double interest = depositAmount * (APR / 100);
+    double interestForOneMonth = interest / 12;
+    total = depositAmount + (depositTerm * interestForOneMonth);
 
-    cout << degrees;
+    cout << total;
 }
