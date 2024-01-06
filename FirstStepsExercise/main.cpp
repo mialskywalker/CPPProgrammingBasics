@@ -1,17 +1,16 @@
 #include <iostream>
+#include <math.h>
 using namespace std;
 
 int main() {
-    const double BGN = 1.79549;
-    double usd = 0.0;
-    double toBGN = 0.0;
+    const double PI = 3.14;
+    double radians = 0.0;
+    double degrees = 0.0;
 
-    cin >> usd;
+    cin >> radians;
 
-    toBGN = usd * BGN;
+    degrees = radians * (180 / PI);
+    degrees = round(degrees);
 
-    cout.setf(ios::fixed);
-    cout.precision(2);
-
-    cout << toBGN;
+    cout << degrees;
 }
