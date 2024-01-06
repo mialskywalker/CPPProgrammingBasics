@@ -2,16 +2,11 @@
 using namespace std;
 
 int main() {
-    double depositAmount = 0.0;
-    int depositTerm = 0.0;
-    double APR = 0.0;
-    double total = 0.0;
+    int pagesCount = 0;
+    int pagesPerHour = 0;
+    int daysCount = 0;
 
-    cin >> depositAmount >> depositTerm >> APR;
+    cin >> pagesCount >> pagesPerHour >> daysCount;
 
-    double interest = depositAmount * (APR / 100);
-    double interestForOneMonth = interest / 12;
-    total = depositAmount + (depositTerm * interestForOneMonth);
-
-    cout << total;
+    cout << (pagesCount / pagesPerHour) / daysCount;
 }
