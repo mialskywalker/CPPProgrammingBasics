@@ -1,0 +1,3 @@
+﻿  coins.cpp
+E:\CLionProjects\ProgrammingBasics\whileLoopExercises\coins\coins.cpp(9,13): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  coins.vcxproj -> E:\CLionProjects\ProgrammingBasics\whileLoopExercises\x64\Debug\coins.exe
